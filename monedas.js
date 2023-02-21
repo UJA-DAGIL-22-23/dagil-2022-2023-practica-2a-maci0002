@@ -80,6 +80,9 @@ monedas.esMonedaValida = function (valor) {
  *          2, si son válidas, permiten el pago y admás sobra dinero.
  */
 monedas.suficienteParaPagar = function (vectorMonedas, montante) {
+    if(montante<0)
+    return -2;
+
        // Escribir el código necesario para que vayan pasando las pruebas una a una.
 }
 

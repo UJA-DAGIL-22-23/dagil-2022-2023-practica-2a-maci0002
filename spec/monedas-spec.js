@@ -61,10 +61,11 @@ Por tanto:
  - Escribe un expect (o dos, según se indica) por cada uno de los comentarios que he dejado, y vuelve a ejecutar el ciclo RED > GREEN > REFACTOR 
  */
 // 
+var v=[1,2,3,4,5,6]; 
 describe("Pago de una factura:", function () {
     it("Un montante negativo devuelve -2",
         function () {
-            // Escribe el expect necesario
+            expect(monedas.suficienteParaPagar(v,-100)).toBe(-2)
         }
     );
     it("Un vector vacío o nulo solo permite pagar montantes iguales a 0",
