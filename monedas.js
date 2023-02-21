@@ -36,8 +36,38 @@ var monedas = module.exports = {};
  */
 monedas.esMonedaValida = function (valor) {
     // Escribir el código necesario para que vayan pasando las pruebas una a una.
-    return false;
-}
+        if( 
+            valor== 0.05
+            || 
+            valor== 0.10
+            || 
+            valor== 0.20
+            || 
+            valor== 0.50
+            || 
+            valor== 1
+            || 
+            valor== 2
+            || 
+            valor== 5
+            || 
+            valor== 10
+            || 
+            valor== 20
+            || 
+            valor== 50
+            || 
+            valor== 100
+            || 
+            valor== 200
+            || 
+            valor== 500)
+        return true;
+        else{
+            return false
+        }
+    }
+
 
 /**
  * @description Comprueba si el conjunto de monedas que se entregan es suficiente para pagar el montante de lo debido
