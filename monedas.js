@@ -90,6 +90,36 @@ monedas.suficienteParaPagar = function (vectorMonedas, montante) {
     return 1; 
     if(vectorMonedas.length==0 && montante>0)
     return 0;
+    for (i=0 ; i<vectorMonedas.length; i++){
+        if(vectorMonedas[i]<0)
+        return -1
+        else if(vectorMonedas[i]!= 0.05
+            && 
+            vectorMonedas[i]!= 0.10
+            && 
+            vectorMonedas[i]!= 0.20
+            && 
+            vectorMonedas[i]!= 0.50
+            && 
+            vectorMonedas[i]!= 1
+            && 
+            vectorMonedas[i]!= 2
+            && 
+            vectorMonedas[i]!= 5
+            && 
+            vectorMonedas[i]!= 10
+            && 
+            vectorMonedas[i]!= 20
+            && 
+            vectorMonedas[i]!= 50
+            && 
+            vectorMonedas[i]!= 100
+            && 
+            vectorMonedas[i]!= 200
+            && 
+            vectorMonedas[i]!= 500)
+            return -1
+    }
 
        // Escribir el código necesario para que vayan pasando las pruebas una a una.
 }

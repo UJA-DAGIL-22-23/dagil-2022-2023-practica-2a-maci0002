@@ -84,10 +84,15 @@ describe("Pago de una factura:", function () {
         }
     );
 
+    var v3=[1,-3,2,2,5]
+    var v4=[1,2,3,1,10]
+
     it("Una moneda no válida en el vector, devuelve -1",
         function () {
             // Escribe el expect que para un vector conteniendo un valor de moneda negativo, devuelve -1
+            expect(monedas.suficienteParaPagar(v3,23)).toBe(-1)
             // Escribe el expect que para un vector conteniendo un valor de moneda positivo, pero no válido, devuelve -1
+            expect(monedas.suficienteParaPagar(v4,23)).toBe(-1)
         }
     );
     it("La suma del vector menor que el montante, devuelve 0",
