@@ -62,6 +62,7 @@ Por tanto:
  */
 // 
 var v=[1,2,3,4,5,6]; 
+var v1=null;
 describe("Pago de una factura:", function () {
     it("Un montante negativo devuelve -2",
         function () {
@@ -71,6 +72,7 @@ describe("Pago de una factura:", function () {
     it("Un vector vacío o nulo solo permite pagar montantes iguales a 0",
         function () {
             // Escribe el expect que para los valores null y 0, devuelva 1
+            expect(monedas.suficienteParaPagar(v1,0)).toBe(1)
             // Escribe el expect que para los valores null y un valor mayor que 0, devuelva 0
             // Escribe el expect que para un vector vacío y 0, devuelva 1
             // Escribe el expect que para un vector vacíoy un valor mayor que 0, devuelva 0
