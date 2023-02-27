@@ -120,6 +120,20 @@ monedas.suficienteParaPagar = function (vectorMonedas, montante) {
             vectorMonedas[i]!= 500)
             return -1
     }
+    var suma=0;
+
+
+    for(i=0;i<vectorMonedas.length;i++){
+        suma=vectorMonedas[i]+suma;
+    }
+
+    if(suma<montante)
+    return 0;
+    if(suma==montante)
+    return 1
+    if(suma>montante)
+    return 2
+    
 
        // Escribir el código necesario para que vayan pasando las pruebas una a una.
 }
