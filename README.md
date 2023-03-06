@@ -1,4 +1,23 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10220110&assignment_repo_type=AssignmentRepo)
+
+### Alumno:
+Miguel Ángel Carrasco Infante (maci0002@red.ujaen.es)
+### Salida:
+
+```
+Aplicación MONEDAS
+==================
+Si intento pagar  10 € con las siguientes monedas [ 1,2,1,2,0.5,20,5 ] , el resultado es 2
+Randomized with seed 77324
+Started
+.........
+
+
+9 specs, 0 failures
+Finished in 0.013 seconds
+Randomized with seed 77324 (jasmine --random=true --seed=77324)
+```
+
 # monedas: Ejercicio de TDD con Jasmine y Node
 ### Ejercicio de TDD, usando Jasmine para Node
 
